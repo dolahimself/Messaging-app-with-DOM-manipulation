@@ -23,5 +23,4 @@ document.addEventListener('DOMContentLoaded', function(){
       li.appendChild(msgName);
       list.appendChild(li);
     });
-
 })
