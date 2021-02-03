@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function(){
     // add messages
     const addForm = forms['add-msg'];
     addForm.addEventListener('submit', function(e){
-      // e.preventDefault();
+      e.preventDefault();
   
       // create elements
       const value = addForm.querySelector('input[type="text"]').value;
@@ -23,18 +23,5 @@ document.addEventListener('DOMContentLoaded', function(){
       li.appendChild(msgName);
       list.appendChild(li);
     });
-  
-    // search messages
-    const searchBar = forms['search-msgs'].querySelector('input');
-    searchBar.addEventListener('keyup', (e) => {
-      const term = e.target.value.toLowerCase();
-      const books = list.getElementsByTagName('li');
-      Array.from(books).forEach((book) => {
-        const title = book.firstElementChild.textContent;
-        if(title.toLowerCase().indexOf(e.target.value) != -1){
-          book.style.display = 'block';
-        } else {
-          book.style.display = 'none';
-        }
-      });
-    });
+
+})
