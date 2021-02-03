@@ -3,32 +3,24 @@ document.addEventListener('DOMContentLoaded', function(){
     const list = document.querySelector('#msg-list ul');
     const forms = document.forms;
   
-    // delete messages
-    list.addEventListener('click', (e) => {
-      if(e.target.className == 'delete'){
-        const li = e.target.parentElement;
-        li.parentNode.removeChild(li);
-      }
-    });
-  
     // add messages
     const addForm = forms['add-msg'];
     addForm.addEventListener('submit', function(e){
-      e.preventDefault();
+      // e.preventDefault();
   
       // create elements
       const value = addForm.querySelector('input[type="text"]').value;
       const li = document.createElement('li');
-      const bookName = document.createElement('span');
+      const msgName = document.createElement('span');
   
       // add text content
-      bookName.textContent = value;
+      msgName.textContent = value;
   
       // add classes
-      bookName.classList.add('name');
+      msgName.classList.add('name');
   
       // append to DOM
-      li.appendChild(bookName);
+      li.appendChild(msgName);
       list.appendChild(li);
     });
   
