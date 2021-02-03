@@ -27,21 +27,6 @@ h1, h2{
     height: 15vh;
 }
 
-/* a {
-    text-decoration: none;
-    display: inline-block;
-    padding: 8px 16px;
-}
-
-.previous {
-    background-color: inherit;
-    color: #9361bf;
-}
-  
-.round {
-    border-radius: 50%;
-} */
-
 .img {
     border-color:#9361bf;
 	border-width: 0px;
@@ -153,19 +138,6 @@ h1, h2{
 #msg-list li:hover{
     border-color: #9361bf;
 }
-
-.delete {
-    /* float: right;
-    background: #9361bf;
-    padding: 6px;
-    border-radius: 4px;
-    cursor: pointer; */
-    /* color: white; */
-}
-
-/* .delete:hover{
-    background: #333;
-} */
 
 #add-msg {
     width: 90vw;
